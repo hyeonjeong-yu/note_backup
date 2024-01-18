@@ -1,0 +1,136 @@
+input {
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
+ul, li {
+  list-style: none;
+}
+.App {
+  text-align: center;
+  padding: 150px 0px 0px 0px;
+}
+.note-wrap,
+.create-wrap {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 30px 0px;
+  background-color: pink;
+  border-radius: 20px;
+}
+.note-content {
+  max-width: 580px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.note-header {
+  text-align: left;
+  margin: 0px 0px 100px 0px;
+}
+.note-selectbox {
+  position: relative;
+  width: 200px;
+  padding: 8px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  align-self: center;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.note-selectbox::before {
+  content: "∨";
+  position: absolute;
+  top: 1px;
+  right: 8px;
+  color: #49c181;
+  /* font-size:  */
+}
+.note-selectbox__label {
+  /* font-size: */
+  margin-left: 4px;
+  text-align: center;
+}
+.note-selectbox__options {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  overflow: hidden;
+  /* max-height:  */
+  padding: 0;
+  border-radius: 8px;
+  background: #222222;
+  color: #fefefe;
+}
+.options {
+  padding: 6px 8px;
+  transition: background-color 0.2s ease-in;
+}
+.options:hover {
+  background-color: #595959;
+}
+.note-container {
+  /* max-width: 580px; */
+  padding: 0px !important
+}
+.note-container__card {
+  margin-bottom: 20px;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.button__edit, .button__delete {
+  cursor: pointer;
+}
+.note-button {
+  text-align: right;
+}
+.note-modal {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+.note-modal-footer {
+  justify-content: space-between !important;
+}
+.create-wrap {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.create-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.create-header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.input__title {
+  width: 100%;
+  height: 50px;
+}
+.input__priority {
+  width: 50%;
+  
+}
+.input__content {
+  width: 100%;
+  height: 400px;
+}
+.deem {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
